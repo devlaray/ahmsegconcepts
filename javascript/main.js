@@ -6,6 +6,10 @@ open.addEventListener('click', ()=>{
     navlinks.classList.toggle('active');
 })
 
+var text = document.querySelector('.text');
+window.addEventListener('scroll', function(){
+    text.classList.toggle('remove', window.scrollY >0);
+})
 
 
 
