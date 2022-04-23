@@ -10,11 +10,6 @@ navlinks.addEventListener('click', ()=>{
     navlinks.classList.remove('active');
 })
 
-var text = document.querySelector('.text');
-window.addEventListener('scroll', function(){
-    text.classList.toggle('remove', window.scrollY >0);
-})
-
 
 
 

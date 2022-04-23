@@ -177,14 +177,6 @@ header nav .navlinks ul li:nth-child(5) a:hover{
     -ms-transform: translate( -50% -50%);
     -o-transform: translate( -50% -50%);
 }
-.banner .text.remove{
-    transform: scale(0.5);
-    opacity: 0;
-    -webkit-transform: scale(0.5);
-    -moz-transform: scale(0.5);
-    -ms-transform: scale(0.5);
-    -o-transform: scale(0.5);
-}
 .banner .text h3{
     font-size: var(--biggest-font-size);
     margin-top: 20px;
@@ -520,6 +512,9 @@ header nav .navlinks ul li:nth-child(5) a:hover{
     font-style: italic;
     font-weight: 500;
 }
+.footer .container ul{
+    margin: 20px;
+}
 .footer .container ul h5{
     letter-spacing: var(--small-letter-spacing);
     font-weight: 500;
@@ -661,6 +656,17 @@ header nav .navlinks ul li:nth-child(5) a:hover{
     }
     .subscribe .container form input[type="email"]{
         width: 300px;
+        border-bottom-right-radius: var(--radius);
+    }
+    .subscribe .container form{
+        flex-direction: column;
+    }
+    
+    .subscribe .container form input[type="submit"]{
+        width: 300px;
+        border-top-left-radius: var(--radius);
+        margin-left: 0;
+        margin-top: 15px;
     }
     
 }
@@ -668,6 +674,14 @@ header nav .navlinks ul li:nth-child(5) a:hover{
 
 
 
+
+/* ------------------------------ */
+@media (max-width: 768px){
+    .banner .text{
+         max-width: 75%;
+    }     
+
+}    
 
 /* ------------------------------ */
 @media (max-width: 550px){
